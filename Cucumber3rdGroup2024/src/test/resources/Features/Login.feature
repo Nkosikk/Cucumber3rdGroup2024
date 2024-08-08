@@ -1,5 +1,6 @@
 Feature: Login
 
+  @login @regression @smoke
   Scenario Outline: As a user i want to login to sauce demo and verify that i can see the home page
     Given login page is displayed
     And I enter username <username>

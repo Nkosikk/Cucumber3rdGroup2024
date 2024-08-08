@@ -6,6 +6,27 @@ Feature: Login
     And I enter password <password>
     When I click login button
     Then Homepage is displayed
+
     Examples:
       | username      | password     |
       | standard_user | secret_sauce |
+
+  Scenario Outline: As a user I want to verify that I'm on the and you can start adding products
+    Given Products page is displayed2
+    And select product
+    When i click cart icon
+    Then cart page is displayed
+    Examples:
+      |  |
+
+
+#  Scenario Outline: As a user I want to verify that I'm on the and you can start adding products
+#    Given Products page is displayed
+#    And select products
+#    When I click cart icon
+#    Then cart page is displayed
+#
+#    Examples:
+#      |  |
+
+

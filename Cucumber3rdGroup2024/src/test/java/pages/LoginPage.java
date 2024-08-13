@@ -14,6 +14,9 @@ public class LoginPage {
     @FindBy(id = "password")
     WebElement password_id;
 
+    @FindBy(id = "login-button")
+    WebElement loginButton_id;
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -26,11 +29,12 @@ public class LoginPage {
         password_id.sendKeys(password);
     }
 
+    public void clickLogin() {
+        loginButton_id.click();
+    }
 
 
-    //ToDo create method to click Login - Consy
-
-    //ToDo create method to verify user is logged in - Consy please choose the guy to do this
+    //ToDo create method to verify user is logged in - Lwandle
 
 
 }

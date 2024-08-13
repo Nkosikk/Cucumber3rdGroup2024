@@ -34,7 +34,6 @@ public class LoginPage {
     }
 
 
-    //ToDo create method to verify user is logged in - Lwandle
 
 
 }

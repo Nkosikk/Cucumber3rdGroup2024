@@ -17,7 +17,6 @@ public class StepsDef {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
     }
 
     @And("I enter username (.*)$")

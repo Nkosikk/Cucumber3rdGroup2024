@@ -2,20 +2,18 @@ package Steps;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.Test;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class StepsDef {
     WebDriver driver;
 
     @Given("login page is displayed")
     public void login_page_is_displayed() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        // driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.get("https://www.saucedemo.com/");
     }
 
@@ -42,7 +40,7 @@ public class StepsDef {
     }
 
     @After
-    public void closeBrowser(){
+    public void closeBrowser() {
         driver.quit();
     }
 }

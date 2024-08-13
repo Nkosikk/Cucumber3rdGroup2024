@@ -19,5 +19,12 @@ public class LoginPage {
         username_id.sendKeys(username);
     }
 
+    //ToDo create method to enter password - Thabiso
+
+    //ToDo create method to click Login - Consy
+
+    //ToDo create method to verify user is logged in - Consy please choose the guy to do this
+
+
 
 }
